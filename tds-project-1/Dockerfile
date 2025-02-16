@@ -29,7 +29,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN npm install -g prettier
 
 # Copy the FastAPI application code and dependencies
-COPY requirements.txt /app/requirements.txt
+COPY app/requirements.txt /app/requirements.txt
 
 # Install dependencies
 RUN pip install --upgrade pip setuptools wheel && \
